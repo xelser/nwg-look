@@ -813,6 +813,7 @@ func saveXsettingsd() {
 	lines = append(lines, fmt.Sprintf("Net/ThemeName \"%s\"", gsettings.gtkTheme))
 	lines = append(lines, fmt.Sprintf("Net/IconThemeName \"%s\"", gsettings.iconTheme))
 	lines = append(lines, fmt.Sprintf("Gtk/CursorThemeName \"%s\"", gsettings.cursorTheme))
+	lines = append(lines, fmt.Sprintf("Gtk/FontName \"%s\"", gsettings.fontName))
 
 	var v int
 	if gsettings.eventSounds {
